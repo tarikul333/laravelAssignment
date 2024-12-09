@@ -19,7 +19,7 @@ class ProfileController extends Controller
             'age' => $age
         ];
 
-        // return $data;
+        return $data;
 
         $name = 'access_token';
         $value = '123-XYZ';
@@ -29,6 +29,6 @@ class ProfileController extends Controller
         $secure = false;
         $httpOnly = true;
 
-        return response('')->cookie($name, $value, $minutes, $path, $domain, $secure, $httpOnly);
+        // return response('')->cookie($name, $value, $minutes, $path, $domain, $secure, $httpOnly);
     }
 }
